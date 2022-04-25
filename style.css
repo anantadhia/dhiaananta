@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: rgb(255, 62, 62);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbarLogo {
+  background-size: 100%;
+  display: flex;
+}
+
+.navbarMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbarItem {
+  height: 85px;
+}
+.navbarLinks {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+
+.navbarLinks:hover {
+  color: blue;
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    max-width: 1300px;
+    padding: 0;
+  }
+  .navbarMenu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -900px;
+  }
+}
+
+.hero {
+  background-color: crimson;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0;
+  text-align: center;
+  padding: 45px;
+}
+.heroHeading {
+  font-size: 150px;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  z-index: 3;
+}
+.heroPenjelasan {
+  font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: 3;
+  color: aliceblue;
+}
+#anima {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+/* tentang */
+.konten {
+  background-color: red;
+  padding: 0;
+}
+.kontenContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 700px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+.kontenMain {
+  color: blanchedalmond;
+  width: 100%;
+}
+.kontenMain h1 {
+  font-size: larger;
+  background-color: firebrick;
+  background-size: 100%;
+}
+.kartuImg {
+  max-width: 60%;
+  max-height: 50%;
+}
+.tombol {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff0852;
+  size: 100px;
+  transition: all ease-out;
+}
+.tombol:hover {
+  background-color: #ff0000;
+  color: white;
+  transition: all ease-in;
+}
+.portofolioanan {
+  background-color: #d60404;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+  grid-template-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  grid-template-columns: auto;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.blog {
+  background-color: #ff0000;
+  text-align: left;
+  justify-content: center;
+  height: 700px;
+  padding: 40px;
+  color: aliceblue;
+}
+
+.kontak {
+  background-color: #fd0000;
+  color: aliceblue;
+  height: 600px;
+}
+.kontak h1 {
+  text-align: center;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #fd0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #ff2020;
+}
+.container {
+  border-radius: 5px;
+  background-color: #ff7b7b;
+  padding: 20px;
+}

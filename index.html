@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prakerja Portofolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Bagian NavBar -->
+
+    <nav class="navbar">
+      <div class="navbarContainer">
+        <a href="#home" id="navbarLogo"><img src="images/an2ta.png" /></a>
+        <div class="navbarToggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbarMenu">
+          <li class="navbarItem">
+            <a href="#home" class="navbarLinks" id="homePage">Home</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#tentang" class="navbarLinks" id="tentangPage">Tentang</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#portofolio" class="navbarLinks" id="portofolioPage">Portofolio</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#blog" class="navbarLinks" id="blogPage">Blog</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#contact" class="navbarLinks" id="contactPage">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- hero -->
+    <div class="hero" id="home">
+      <div class="heroContainer">
+        <h1 class="heroHeading">Hallo<span>Teman Anan</span></h1>
+        <iframe src="https://my.spline.design/an2tacopy-028d3381bb6fe819945e3fa1ada14506/" frameborder="0" width="1000px" height="700px" id="anima"></iframe>
+        <p class="heroPenjelasan">Dhia Ananta Portofolio</p>
+      </div>
+    </div>
+    <!-- tentang goreng -->
+    <div class="konten" id="tentang">
+      <div class="kontenContainer">
+        <div class="imgContainer">
+          <img src="images/an2ta.png" class="kartuImg" />
+        </div>
+        <div class="kontenMain">
+          <h1>salam perkenalan</h1>
+          <p>saya merupakan murid dari kelas prakerja batch kedua dari kode.id</p>
+          <p>Saya merupakan seorang karyawan dengan sedikit kemampuan desain yang ingin merambah ke web.</p>
+          <p>Website ini merupakan hasil dari kurang dari sebulan belajar html, semoga anda suka.</p>
+          <button href="https://www.instagram.com/an2ta/" class="tombol">cek out</button>
+        </div>
+      </div>
+    </div>
+    <!-- Portofolio -->
+    <div class="portofolioanan" id="portofolio">
+      <h1>Hasil Karya Saya</h1>
+      <div class="galeri">
+        <div class="row">
+          <div class="column">
+            <img src="Images/apocalypto postero.jpg" />
+            <img src="Images/brave.jpg" />
+            <img src="Images/logoaaa.png" />
+            <img src="Images/makamo.png" />
+            <img src="Images/an2ta.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog -->
+    <div class="blog" id="blog">
+      <h1>Desain vs seni</h1>
+      <p>Kebanyakan orang mengira bahwa mereka yang pandai mendesain adalah para seniman.</p>
+      <p>Namun, kenyataannya adalah tidak semua orang dengan bakat seni memiliki kemampuan untuk mengetahui apa yang kebanyakan orang sukai.</p>
+      <p>Di dunia desain ada yang namanya penelitian pengguna, atau user research A.K.A UX design.</p>
+
+      <p>Cabang ilmu ini berkutat pada sisi psikologi manusia dan hubungannya dengan desain visual, hingga ergonomic manusia,</p>
+      <p>Padahal web ini juga gak ada seninya hehe.</p>
+      <a href="https://www.instagram.com/an2ta/"> Cek aja Instagram saya.</a>
+    </div>
+    <!-- contact me -->
+
+    <div class="kontak" id="contact">
+      <div>
+        <h1>Hubungi saya</h1>
+        <div class="container">
+          <form action="action_page.php">
+            <label for="fname">Nama depan</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+            <label for="lname">Nama belakang</label>
+            <input type="text" isd="lname" name="lastname" placeholder="Your last name.." />
+
+            <label for="country">Asal Muasal</label>
+            <select id="country" name="country">
+              <option value="vrindavan">vrindavan</option>
+              <option value="sunda">sunda empire</option>
+              <option value="klaten">Klaten</option>
+            </select>
+
+            <label for="subject">Curhat dong</label>
+            <textarea id="subject" name="subject" placeholder="Silahkan sampaikan keluh kesah anda dalam menjadi manusia modern" style="height: 200px"></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
